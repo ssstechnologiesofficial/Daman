@@ -10,17 +10,20 @@ import { FaUniversity } from "react-icons/fa";
 import { FaCogs } from "react-icons/fa";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
 import { RiGiftFill } from "react-icons/ri";
+import Navbar from '../components/Navbar';
+
+
 
 const Sidebar = () => {
   return (
     <div className='flex'>
-    <div className='w-64 bg-darkSidebar h-full px-4 py-2 shadow-custom  font-bold text-base font-normal leading-relaxed text-gray-300 text-left'>
+    <div className='w-64 bg-darkSidebar fixed h-full px-4 py-2 shadow-custom  font-bold text-base font-normal leading-relaxed text-gray-300 text-left'>
         <div className='my-2 mb-4 flex items-center border-b-[2px] border-solid border-[#4f5962] pb-4'>
         <div className="flex  items-center justify-center rounded-full shadow mr-4 bg-blue-500" > 
         <HiUser className="fa-solid w-9 h-9" />
 
-</div>
-          <h3 className=''>Admin | DigiSlay</h3>
+        </div>
+          <h3 className=''>Admin</h3>
         </div>
         <ul className='mt-3'>
             {/* <li className='mb-2 rounded hover:shadow hover:bg-blue-500 py-2'>
@@ -30,10 +33,11 @@ const Sidebar = () => {
               </a>
             </li> */}
 
-<Link to ="winGo" className='px-3 mb-2 rounded hover:shadow hover:bg-blue-500 py-2'>
-              
+                 <Link to ="winGo" className='px-3 mb-2 rounded hover:shadow hover:bg-blue-500 py-2'>
+
                 <FaTachometerAlt className='inline-block w-6 h-6 mr-2 -mt-2'/> 
                 Wingo
+                
               
             </Link>
 
@@ -113,13 +117,17 @@ const Sidebar = () => {
         </ul>
 
     </div>
-    <div className='flex-grow'>
-      <main className='p-4'>
-        <Outlet></Outlet>
+
+    
+    <div className='flex-grow ps-64'>
+      <main className='flex-grow'>
+      <Navbar/>
+        <div><Outlet></Outlet></div>
       </main>
     </div>
+   
     </div>
-    
+   
     
   );
 };
