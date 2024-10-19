@@ -19,13 +19,13 @@ const Sidebar = () => {
     <div className='flex'>
     <div className='w-64 bg-darkSidebar fixed h-full px-4 py-2 shadow-custom  font-bold text-base font-normal leading-relaxed text-gray-300 text-left'>
         <div className='my-2 mb-4 flex items-center border-b-[2px] border-solid border-[#4f5962] pb-4'>
-        <div className="flex  items-center justify-center rounded-full shadow mr-4 bg-blue-500" > 
-        <HiUser className="fa-solid w-9 h-9" />
+        <div className="flex  items-center justify-center rounded-full shadow mr-4 bg-blue-600" > 
+        <HiUser className="fa-solid w-7 h-7" />
 
         </div>
           <h3 className=''>Admin</h3>
         </div>
-        <ul className='mt-3'>
+        <ul className='mt-5'>
             {/* <li className='mb-2 rounded hover:shadow hover:bg-blue-500 py-2'>
               <a href="" className='px-3'>
                 <FaTachometerAlt className='inline-block w-6 h-6 mr-2 -mt-2'/> 

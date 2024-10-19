@@ -29,7 +29,7 @@ const WinGo = () => {
   };
 
   return (
-    <div>
+    <div className='  p-4 min-h-screen flex flex-col items-center bg-grayCustom'>
       <div className="grid grid-cols-4 gap-4 mt-4">
         {/* Card 30sec */}
         <div className="flex flex-col items-center cursor-pointer" onClick={() => handleTabClick('30S')}>
