@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Tapbar from './Tapbar';
+import Gameoptions from './Gameoptions';
 
 const images = [
   '../../public/Image/Banner/Banner1.png',
@@ -40,7 +41,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-white">
       <div className=" top-0 left-0 right-0 z-20 sticky">
         <Navbar />
       </div>
@@ -78,6 +79,7 @@ const Home = () => {
             />
           </div>
         </div>
+        <Gameoptions />
       </div>
 
       <div className="bottom-0 left-0 right-0 z-20 sticky">
