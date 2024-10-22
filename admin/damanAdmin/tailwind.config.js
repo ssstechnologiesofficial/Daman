@@ -6,7 +6,7 @@ export default {
       colors: {
         
         darkSidebar: "#353a40",
-        grayCustom: "#c3c7d0",
+        grayCustom: "#c2c7d0",
         bodyCustom:"#495057",
       },
 

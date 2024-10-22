@@ -4,9 +4,9 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <div className=" p-4 min-h-screen  bg-grayCustom">
+    <div className="  h-full w-full  ">
       
-        <h1 className=" font-semibold text-white">Dashboard</h1>
+        <h1 className=" font-semibold text-white">Dashboard V5</h1>
    
    
       
