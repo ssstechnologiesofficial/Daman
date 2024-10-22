@@ -17,8 +17,8 @@ import Navbar from '../components/Navbar';
 const Sidebar = () => {
   return (
     <div className='flex'>
-    <div className='w-64 bg-darkSidebar fixed h-full px-4 py-2 shadow-custom  font-bold text-base font-normal leading-relaxed text-gray-300 text-left'>
-        <div className='my-2 mb-4 flex items-center border-b-[2px] border-solid border-[#4f5962] pb-4'>
+    <div className='w-64 bg-darkSidebar fixed h-full px-4 py-2 shadow-custom text-grayCustom font-bold text-base font-normal leading-relaxed  text-left'>
+        <div className='my-2 mb-4 flex items-center border-b-[2px] border-solid border-[#c3c7d0] pb-4'>
         <div className="flex  items-center justify-center rounded-full shadow mr-4 bg-blue-600" > 
         <HiUser className="fa-solid w-7 h-7" />
 

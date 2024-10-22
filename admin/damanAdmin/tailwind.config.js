@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkSidebar: "#343a40",
-        grayCustom: "#4f5962",
+        
+        darkSidebar: "#353a40",
+        grayCustom: "#c3c7d0",
+        bodyCustom:"#495057",
       },
 
       boxShadow: {
         custom:
           "0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22)",
       },
+      
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import { FaBars, FaSearch } from "react-icons/fa";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className="bg-gray-800 px-4 py-3 flex justify-between">
+    <nav className="bg-darkSidebar fixed top-0 w-full px-4 py-3 flex justify-between z-10 before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-gray-900/30 before:rounded before:-z-10">
       <button onClick={toggleSidebar} className="text-white">
         <FaBars />
       </button>

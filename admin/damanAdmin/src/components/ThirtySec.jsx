@@ -1,10 +1,122 @@
 import React from 'react';
+import { FaShoppingCart } from "react-icons/fa";
 
 const ThirtySec = () => {
   return (
-    <div className="p-4 text-white">
-      <h3 className="text-xl font-semibold">30 Seconds Details</h3>
-      <p>Details about WinGO for 30 seconds go here.</p>
+    <div className='p-4 flex-col'>
+      <div className='w-full p-2 '> {/* Wrapper div added */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-start"> {/* Increased gap for cards */}
+          
+          {/* Card 30sec */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full"> {/* Reduced padding */}
+              <div className="bg-red-500 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}> {/* Reduced icon size */}
+                <FaShoppingCart className="text-white text-xl" /> {/* Reduced icon size */}
+              </div>
+              <div className="flex flex-col ml-4"> {/* Flex container for vertical alignment */}
+                <p className="text-white text-base">Join Red</p> {/* Reduced text size */}
+                <p className="text-white text-base">0</p> {/* Reduced text size */}
+              </div>
+            </div>
+          </div>
+
+          {/* Card 1min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-violet-600 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Join Violet</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-green-600 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Join Green</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-blue-400 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Total Amount</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='w-full p-2 '> {/* Wrapper div added */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-start"> {/* Increased gap for cards */}
+          
+          {/* Card 30sec */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full"> {/* Reduced padding */}
+              <div className="bg-red-500 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}> {/* Reduced icon size */}
+                <FaShoppingCart className="text-white text-xl" /> {/* Reduced icon size */}
+              </div>
+              <div className="flex flex-col ml-4"> {/* Flex container for vertical alignment */}
+                <p className="text-white text-base">Join Red</p> {/* Reduced text size */}
+                <p className="text-white text-base">0</p> {/* Reduced text size */}
+              </div>
+            </div>
+          </div>
+
+          {/* Card 1min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-violet-600 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Join Violet</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-green-600 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Join Green</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5min */}
+          <div className="flex items-center cursor-pointer w-full">
+            <div className="bg-darkSidebar shadow-custom p-4 rounded flex items-center w-full">
+              <div className="bg-blue-400 flex items-center justify-center rounded shadow-lg" style={{ width: '50px', height: '45px' }}>
+                <FaShoppingCart className="text-white text-xl" />
+              </div>
+              <div className="flex flex-col ml-4"> 
+                <p className="text-white text-base">Total Amount</p>
+                <p className="text-white text-base">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     </div>
   );
 };
