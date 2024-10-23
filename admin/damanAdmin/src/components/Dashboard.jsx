@@ -1,6 +1,6 @@
 // Dashboard.jsx
 import React from "react";
-
+import {Numbers} from "./Numbers";
 
 const Dashboard = () => {
   return (
@@ -14,7 +14,7 @@ const Dashboard = () => {
       
       {/* Add more content like this */}
     
-
+<Numbers></Numbers>
     
     </div>
   );
