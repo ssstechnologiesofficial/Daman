@@ -16,20 +16,18 @@ import Navbar from "../components/Navbar";
 
 function Sidebar() {
   return (
-    <div className="flex w-full ">
+    <div className="flex w-full">
       {/* Sidebar */}
-      <div className="w-64 bg-darkSidebar leading-relaxed fixed h-full px-3 py-2 shadow-custom text-grayCustom font-bold text-lg font-normal text-left">
+      <aside className="w-64 bg-darkSidebar leading-relaxed px-3 py-2 shadow-custom text-grayCustom font-bold text-lg font-normal text-left flex flex-col">
         <div className="my-3 px-2 mb-4 flex items-center border-b-[1px] border-solid border-grayCustom pb-4">
-          <div className="flex items-center justify-center rounded-full shadow-custom text-white mr-3  bg-blue-400 w-8 h-8">
-            {" "}
-            {/* Set width and height for the rounded div */}
-            <HiUser className="fa-solid w-7 h-7" /> {/* Increased icon size */}
+          <div className="flex items-center justify-center rounded-full shadow-custom text-white mr-3 bg-blue-400 w-8 h-8">
+            <HiUser className="fa-solid w-7 h-7" />
           </div>
-          <h3 className="text-xl">Admin</h3> {/* Increased text size */}
+          <h3 className="text-xl">Admin</h3>
         </div>
 
         {/* Navigation Links */}
-        <ul className="mt-5 ">
+        <ul className="mt-1 flex-grow">
           {[
             {
               path: "/winGo",
@@ -37,9 +35,9 @@ function Sidebar() {
               label: "Wingo",
             },
             {
-              path: "/5D",
+              path: "/fiveD",
               icon: <FaTachometerAlt className="w-6 h-6" />,
-              label: "5D",
+              label: "FiveD",
             },
             {
               path: "/K3",
@@ -48,7 +46,7 @@ function Sidebar() {
             },
             {
               path: "/members",
-              icon: <FaUserCircle className="W-6 h-6" />,
+              icon: <FaUserCircle className="w-6 h-6" />,
               label: "Members",
             },
             {
@@ -107,16 +105,15 @@ function Sidebar() {
                 }
               >
                 {icon}
-                <span className="ml-3 text-lg">{label}</span>{" "}
-                {/* Increased text size */}
+                <span className="ml-3 text-lg">{label}</span>
               </NavLink>
             </li>
           ))}
         </ul>
-      </div>
+      </aside>
 
       {/* Main Content */}
-      <div className="flex-grow ps-64">
+      <div className="flex-grow ">
         <main className="flex-grow">
           <Navbar />
           <div>

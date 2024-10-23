@@ -8,6 +8,7 @@ export default {
         darkSidebar: "#353a40",
         grayCustom: "#c2c7d0",
         bodyCustom:"#495057",
+        customBlue: '#037bfe',
       },
 
       boxShadow: {

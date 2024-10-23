@@ -3,7 +3,7 @@ import { FaBars, FaExpandArrowsAlt } from "react-icons/fa";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className="bg-darkSidebar fixed top-0 h-10 w-full px-4 py-3 flex justify-between items-center z-50 before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-gray-900/30 before:rounded before:-z-10">
+    <nav className="bg-darkSidebar fixed top-0  w-full px-4 py-3 flex justify-between items-center z-50 before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-gray-900/30 before:rounded before:-z-10" style={{height:'55px'}}>
       {/* Sidebar toggle button on the left */}
       <button onClick={toggleSidebar} className="text-white">
         <FaBars />

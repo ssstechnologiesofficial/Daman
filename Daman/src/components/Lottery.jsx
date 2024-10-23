@@ -1,6 +1,6 @@
 import React from 'react';
-import dragenbg from '../../public/Image/bj-0907ace0.png';
-import dragenlogo from '../../public/Image/dragon.png';
+import dragonbg from '../../public/Image/bj-0907ace0.png';
+import dragonlogo from '../../public/Image/dragon.png';
 
 const GamesImg = {
   imgs: [
@@ -23,11 +23,11 @@ const Lottery = () => {
       <div className="font-bold text-lg opacity-80 mb-4">Lottery</div>
 
       <div className="relative w-full mb-8">
-        <img src={dragenbg} alt="Dragon Background" className="w-full" />
+        <img src={dragonbg} alt="Dragon Background" className="w-full" />
 
         <div className="absolute flex items-center justify-center -top-7 text-white">
           <img
-            src={dragenlogo}
+            src={dragonlogo}
             alt="Dragon Logo"
             className="w-28 p-1 object-contain mt-4"
           />

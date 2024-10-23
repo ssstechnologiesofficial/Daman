@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
                         element: <K3/>,
                     },
                     {
-                        path: 'FiveD',
+                        path: 'fiveD',
                         element: <FiveD/>,
                     },
                 ],
