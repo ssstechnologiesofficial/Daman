@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-dragen': "url('/public/Image/bj-0907ace0.png')", // Adjust path if needed
+      },
+    },
   },
   plugins: [],
 };

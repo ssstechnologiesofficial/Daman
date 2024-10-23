@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Tapbar from './Tapbar';
 import Gameoptions from './Gameoptions';
+import WinningInfo from './WinningInfo';
 
 const images = [
   '../../public/Image/Banner/Banner1.png',
@@ -41,17 +42,18 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen bg-white">
-      <div className=" top-0 left-0 right-0 z-20 sticky">
+    <div className="flex flex-col h-full   bg-white">
+      <div className="top-0 left-0 right-0 z-20 sticky">
         <Navbar />
       </div>
-      <div className="flex-grow overflow-auto">
+      {/* Scrollable Container */}
+      <div className="flex-grow overflow-auto h-full scrollbar-hide">
         <div className="px-3 relative">
           <div className="slider rounded-full">
             <img
               src={images[currentIndex]}
               alt={`Slide ${currentIndex + 1}`}
-              className="w-full h-[175px] rounded-lg" // Tailwind for consistent styling
+              className="w-full h-[175px] rounded-lg"
             />
           </div>
 
@@ -80,9 +82,10 @@ const Home = () => {
           </div>
         </div>
         <Gameoptions />
+        <WinningInfo />
       </div>
 
-      <div className="bottom-0 left-0 right-0 z-20 sticky">
+      <div className="bottom-0 left-0 right-0 z-20 fixed">
         <Tapbar />
       </div>
     </div>
